@@ -1,70 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
-
-</head>
-<body>
-        <nav>
-            <h1>QUIZ APPLICATION</h1>
-            <div>
-                <a href="quiz/gk.html">general knowledge</a>
-                <a href="quiz/history.html">history</a>
-                <a href="quiz/math.html">math</a>
-            </div>
-        </nav>
-        <main>
-            <h1 style="text-align:center; padding: 20px 0px;">HI JOHN WELCOME TO MY QUIZ</h1>
-            <section>
-                <div>
-                  <img src="https://s3.ap-south-1.amazonaws.com/tf-wp-content.testfunda.com/website/wp-content/uploads/2023/07/20114443/GK-Quiz.png">
-                  <p>Curious about the world? 🌍✨ Try our fun GK quiz! Discover cool facts about animals, places, people, and
-            more. Every question helps you learn something new. Jump in, have fun, and become a knowledge champ today!</p>
-            <button><a href="quiz/gk.html">gk quiz</a></button>
-                </div>
-                <div>
-                  <img src="https://dailyschoolassembly.com/wp-content/uploads/2025/06/Science-Quiz-Trivia-Biology_-Physics_-Chemistry.webp">
-                  <p>Ready to be a science superstar? 🚀 Take our fun science quiz and explore planets, animals, and amazing
-            experiments! Every question is an adventure—learn cool facts, earn bragging rights, and discover how awesome
-            science can be. Start now and shine—science is waiting!</p>
-            <button><a href="quiz/history.html">history quiz</a></button>
-                </div>
-                <div>
-                  <img src="https://cdn.slidesharecdn.com/ss_thumbnails/math-quiz-presentation-240702015019-bc9b7f03-thumbnail.jpg?width=640&height=640&fit=bounds">
-                  <p>Love puzzles and big ideas? 🧠✨ Try our fun math quiz! Add, count, and solve your way through cool
-            challenges. Every question is a mini game that makes your brain stronger. Jump in, have fun, and show how
-            amazing math can be!</p>
-            <button><a href="quiz/math.html">math quiz</a></button>
-                </div>
-            </section>
-        </main>
-        <section style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <h1 style="color: rgb(14, 95, 167); text-shadow: 10px 10px 10px rgb(42, 110, 220);">Suggestions Form</h1>
-            <form onsubmit="alert('Thank You')">
-                <div>
-                    <label>fullname:</label>
-                    <br>
-                    <input type="text" placeholder="name" name="fullname" required id="input">
-                </div>
-                <div>
-                    <label>email:</label>
-                    <br>
-                    <input type="email" placeholder="email" name="email" required id="input">
-                </div>
-                <div>
-                    <label>suggestions:</label>
-                    <br>
-                    <textarea id="input" type="text" placeholder="suggestions" name="suggestions" required></textarea>
-                </div>
-                <input id="button" type="submit">
-                <input id="button" type="reset">
-            </form>
-        </section>
-        <footer>
-            <h2> Website made by Aarohan</h2>
-        </footer>
-</body>
-</html>
+* {
+    margin:0; padding:0; box-sizing:border-box;
+}
+nav {
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+}
+a {
+    text-decoration: none;
+    font-size:20px;
+    margin-right:10px;
+    color:#629FAD;
+    
+}
+a:hover {
+    color:blue;
+}
+body {
+    background-color:#629FAD;
+}
+footer {
+    background-color: antiquewhite;
+    text-align: center;
+    padding:10px
+    
+}
+img {
+    width:400px;
+}
+button {
+    padding:10px 20px;
+    margin:10px 0px;
+}
+main {
+    padding: 30px 20px;
+}
+section {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+button a {
+    color:black;
+}
+button a:hover {
+    color: rgb(199, 54, 21);
+}
+form {
+    background-color:antiquewhite;
+    width:400px;
+    padding: 30px 20px;
+    border-radius: 2vh;
+    margin: 30px 20px
+}
+#input {
+    padding: 5px;
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#button {
+    padding: 5px;
+    font-size: 15px;
+}
+label {
+    text-transform: capitalize;
+    margin-bottom: 10px;   
+}
